@@ -1,0 +1,40 @@
+.TH man 1 "18 April 2023" "1.0" "Meeko The Shell man page"
+.SH NAME
+.B Meeko
+- A basic UNIX command line interpreter.
+.SH SYNOPSIS
+Meeko can interpret and execute command line arguments read from the standard input.
+.SH DESCRIPTION
+The Meeko shell is a program that reads line by line from a file or the terminal line. It then interprets the lines and executes it if the line is a valid command. 
+
+.SH USAGE
+All the files are to be compiled on an Ubuntu 20.04 LTS machine with "gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh".
+
+Once compiled, to start the program, run:
+.br
+$ ./hsh
+
+To exit the program, run:
+.br
+hsh $ exit
+
+.SH BUILT-INS
+The following built-ins are supported by the Meeko shell:
+
+.B env - 
+Print the current environment.
+
+.B setenv VARIABLE VALUE - 
+Initialize a new environment variable, or modify an existing one. 
+
+.B unsetenv VARIABLE - 
+Remove an environment variable.
+
+.SH RETURN VALUE
+Meeko shell will exit with status 0 unless status is specified.
+.SH SEE ALSO
+.I sh(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Kaylene Kilbourn
