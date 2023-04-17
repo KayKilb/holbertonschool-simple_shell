@@ -6,14 +6,16 @@
  */
 int _strlen(char *s)
 {
-	int count = 0;
+    int count = 0;
 
-	if (s != '\0')
-	{
-		while (*(s + count) != '\0')
-			count++;
-	}
-	return (count);
+    if (s != NULL)
+    {
+        while (*(s + count) != '\0')
+        {
+            count++;
+        }
+    }
+    return count;
 }
 /**
  * _strncmp - compares two strings for n amount of chars
