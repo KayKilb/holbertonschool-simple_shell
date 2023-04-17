@@ -77,12 +77,9 @@ void free_array(char **array);
 /* new_env.c */
 char *_getenv(char *name, list_t **env_head);
 int _setenv(char *name, char *value, list_t **env_head);
-int _setenv(const char *name, const char *value, int overwrite);
 int _unsetenv(char *name, list_t **env_head);
-int _unsetenv(const char *name);
 int delete_node(list_t **head, char *string);
 char *var_str(char *name, char *value);
-char *_getenv(const char *name);
 /* _getline.c */
 int _getline(char *input, int size);
 int exit_shell(char **line_tok);
