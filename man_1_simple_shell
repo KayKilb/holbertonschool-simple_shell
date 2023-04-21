@@ -35,6 +35,6 @@ Meeko shell will exit with status 0 unless status is specified.
 .SH SEE ALSO
 .I sh(1)
 .SH BUGS
-No known bugs.
+Bugs are present in output of code.
 .SH AUTHOR
 Kaylene Kilbourn
