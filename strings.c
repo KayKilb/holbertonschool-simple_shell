@@ -6,16 +6,14 @@
  */
 int _strlen(char *s)
 {
-    int count = 0;
+	int count = 0;
 
-    if (s != NULL)
-    {
-        while (*(s + count) != '\0')
-        {
-            count++;
-        }
-    }
-    return count;
+	if (s != '\0')
+	{
+		while (*(s + count) != '\0')
+			count++;
+	}
+	return (count);
 }
 /**
  * _strncmp - compares two strings for n amount of chars
@@ -23,7 +21,6 @@ int _strlen(char *s)
  * @s2: pointer to string s2
  * @n: number of chars to compare
  * Return: 0 if identical
- *
  */
 int _strncmp(char *s1, char *s2, int n)
 {
@@ -47,9 +44,7 @@ int _strncmp(char *s1, char *s2, int n)
  * _strcpy - copies the string with \0 to the buffer
  * @dest: pointer to dest
  * @src: pointer to string
- *
  * Return: the pointer to dest
- *
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -68,9 +63,7 @@ char *_strcpy(char *dest, char *src)
  * _strcat - appends the src string to the dest string
  * @dest: pointer to dest string
  * @src: pointer to src string
- *
  * Return: pointer to resulting string dest
- *
  */
 char *_strcat(char *dest, char *src)
 {
@@ -86,10 +79,10 @@ char *_strcat(char *dest, char *src)
 }
 /**
  * _strdup - returns a pointer to a newly allocated space in memory, which
-*           contains a copy of the string given as a parameter
-* @str: string to copy
-* Return: pointer to new string or NULL if str = NULL
-*/
+ * contains a copy of the string given as a parameter
+ * @str: string to copy
+ * Return: pointer to new string or NULL if str = NULL
+ */
 char *_strdup(char *str)
 {
 	int i, len;
